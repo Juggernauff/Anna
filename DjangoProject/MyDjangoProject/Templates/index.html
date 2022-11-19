@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+{% load static %}
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Анна Трубецкая</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+        <link rel="stylesheet" href="{% static "css/bootstrap.css" %}">
+        <link rel="stylesheet" href="{% static "css/main.css" %}">
+        <link rel="stylesheet" href="{% static "css/slider.css" %}">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        <title>Index</title>
+    </head>
+    <body>
+        <div class="outer-wrapper">
+            <div class="container-fluid">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <center><h1>Анна Трубецкая</h1></center>
+                    </div>			
+                </div>
+                <hr class="spacer">
+                <div class="row">
+                  <div class="col-lg-12" id="about">
+                    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <div class="container">
+                                  <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
+                                -->
+                                <img src="{% static "img/img1.png" %}" width="100%" height="100%" style="height: 565px;">
+                                  <div class="carousel-caption text-start">
+                                    <h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Привет, меня зовут Аня!</font></font></h1>
+                                    <h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">А это моя сайт-визитка</font></font></h2>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                              <!--  <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
+                              -->
+                              <img src="{% static "img/img2.png" %}" width="100%" height="100%" style="height: 565px;">
+                                <div class="container">
+                                  <div class="carousel-caption">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
+                                -->
+                                <img src="{% static "img/img3.png" %}" width="100%" height="100%" style="height: 565px;">
+                                <div class="container">
+                                  <div class="carousel-caption text-end">
+                                    <h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Больше фотографий у меня в Instagram</font></font></h1>
+                                    <p><a class="btn btn-lg btn-primary" href="https://www.instagram.com/_nooooo__nameeeee_"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Перейти в Instagram</font></font></a></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Предыдущий</font></font></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Следующий</font></font></span>
+                            </button>
+                          </div>
+                    </div>
+                </div>
+                <hr class="spacer">
+                <style>
+                  .list4a {
+    padding:0;
+    list-style: none;
+    counter-reset: li;
+}    
+.list4a li {
+    position: relative;
+    padding:12px 20px 20px 28px;
+    margin-left: 40px;
+    transition-duration: 0.3s;
+}
+.list4a li:before {
+    border: 6px solid transparent;
+    line-height: 30px;
+    position: absolute;
+    top: 0;
+    left:-30px;
+    width:42px;
+    text-align:center;
+    font-size: 13px;
+    font-weight: bold;
+    color: #77AEDB;
+    counter-increment: li;
+    content: counter(li);
+    transition-duration: 0.3s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;    
+    }
+.list4a li:hover:before {
+    color: #337AB7;    
+}
+.list4a li:after {
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 42px;
+    height: 42px;
+    border: 6px solid #3399FF;
+    border-radius: 50%;
+    content: '';
+    opacity: 0.5;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;    
+}
+.list4a li:hover:after {
+    animation: 500ms ease-in-out 0s bounceIn;
+    opacity: 1;
+}    
+ 
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale3d(.3, .3, .3);
+    }
+    20% {
+        transform: scale3d(1.3, 1.3, 1.3);
+    }
+    40% {
+        transform: scale3d(.9, .9, .9);
+    }
+    60% {
+        opacity: 1;
+        transform: scale3d(1.03, 1.03, 1.03);
+    }
+    80% {
+        transform: scale3d(.97, .97, .97);
+    }
+    to {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+    }
+}
+                </style>
+                <script type="text/javascript">
+                  /**
+                  * Функция Скрывает/Показывает блок 
+                  * @author ox2.ru дизайн студия
+                  **/
+                  function showHide(element_id) {
+                      //Если элемент с id-шником element_id существует
+                      if (document.getElementById(element_id)) { 
+                          //Записываем ссылку на элемент в переменную obj
+                          var obj = document.getElementById(element_id); 
+                          //Если css-свойство display не block, то: 
+                          if (obj.style.display != "block") { 
+                              obj.style.display = "block"; //Показываем элемент
+                          }
+                          else obj.style.display = "none"; //Скрываем элемент
+                      }
+                      //Если элемент с id-шником element_id не найден, то выводим сообщение
+                      else alert("Элемент с id: " + element_id + " не найден!"); 
+                  }   
+              </script>
+                <div id="hobby">
+                <center><h1>Мои достижения и увлечения</h1></center>
+                <ul class="list4a">
+                  <li><h2 style="color:#3399FF"><a href="javascript:void(0)" onclick="showHide('block_1')">Мастер ногтевого сервиса</h2></li>
+                    <div id="block_1" style="display: none;">
+                      <img src="{% static "img/img11.jpg" %}" width="100%" height="100%">
+                      <img src="{% static "img/img12.jpg" %}" width="100%" height="100%">
+                      <img src="{% static "img/img13.jpg" %}" width="100%" height="100%">
+                  </div>
+                  <li><h2 style="color:#3399FF"><a href="javascript:void(0)" onclick="showHide('block_2')">Изготовление ростовых цветов</a></h2></li>
+                  <div id="block_2" style="display: none;">
+                    <img src="{% static "img/img21.jpg" %}" width="100%" height="100%">
+                    <img src="{% static "img/img22.jpg" %}" width="100%" height="100%">
+                </div>
+                  <li><h2 style="color:#3399FF"><a href="javascript:void(0)" onclick="showHide('block_3')">Рукоделие</a></h2></li>
+                  <div id="block_3" style="display: none;">
+                    <p>Not Founded</p>
+                </div>
+                  <li><h2 style="color:#3399FF"><a href="javascript:void(0)" onclick="showHide('block_4')">Вязание</a></h2></li>
+                  <div id="block_4" style="display: none;">
+                    <img src="{% static "img/img41.jpg" %}" width="100%" height="100%">
+                </div> 
+              </ul>
+                <hr class="spacer">
+                <div class="row">
+                    <div class="col-lg-12" id="contacts">
+                        <center><h1>Контакты</h1>
+                        <h4>
+                            <a href="https://vk.com/public212169766"><img height="50px" src="{% static "img/vk_logo.png" %}"></a>
+                            <a href="https://www.instagram.com/_nooooo__nameeeee_"><img height="50px" src="{% static "img/inst_logo.png" %}"></a>
+                        </h4>
+                        </center>
+                    </div>
+                </div>
+              </div>
+                <hr class="spacer">
+                <footer>
+                    <center>
+                        <b>
+                            Copyright Анна Трубецкая
+                        </b>
+                    </center>
+                </footer>
+            </body>
+            </html>	
+            <nav class="navscroll">
+                <ul class="list-group navigation">
+                  <li class="list-group-item"><a href="#about">Обо мне</a></li>
+                  <li class="list-group-item"><a href="#hobby">Мои достижения и увлечения</a></li>
+                    <li class="list-group-item"><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <script src="{% static "js/vendor/jquery-1.11.1.min.js" %}></script>
+        <script src="{% static "js/vendor/bootstrap.js" %}"></script>
+        <script src="{% static "js/smoothscroll.js" %}"></script>
+        <script src="{% static "js/shCore.js" %}"></script>
+        <script src="{% static "js/shBrushCss.js" %}></script>
+        <script src="{% static "js/shBrushJScript.js" %}></script>
+        <script src="{% static "js/shBrushXml.js" %}></script>
+        <script src="{% static "js/shBrushPhp.js" %}></script>
+        <script src="{% static "js/main.js"></script>
+        <script>SyntaxHighlighter.all();</script>
+    </body>
+</html>
+    
+    
